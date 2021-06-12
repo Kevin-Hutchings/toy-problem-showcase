@@ -19,8 +19,21 @@ class Sum extends Component{
     this.setState({number2: parseInt(val, 10)});
   }
 
-  sumMethod(number1, number2){
+  sumAdd(number1, number2){
     this.setState({sum: number1 + number2});
+  }
+
+  sumMultiply(number1, number2){
+    this.setState({sum: number1 * number2});
+  }
+
+  handleReset(){
+    Array.from(document.querySelectorAll('input')).forEach(
+      input => (input.value = '')
+    );
+    this.setState({
+      sum: null
+    });
   }
 
   render() {
@@ -29,7 +42,9 @@ class Sum extends Component{
         <h4>Sum</h4>
         <input className="inputLine" type="number" onChange={(e) => this.updateNumber1(e.target.value)}/>
         <input className="inputLine" type="number" onChange={(e) => this.updateNumber2(e.target.value)}/>
-        <button className="confirmationButton" onClick={() => this.sumMethod(this.state.number1, this.state.number2)}>Sum</button>
+        <button className="confirmationButton" onClick={() => this.sumAdd(this.state.number1, this.state.number2)}>Add</button>
+        <button className="confirmationButton" onClick={() => this.sumMultiply(this.state.number1, this.state.number2)}>Multiply</button>
+        <button className="confirmationButton" onClick={() => this.handleReset()}>clear</button>
         <span className="resultsBox">Sum: {this.state.sum}</span>
       </div>
     )

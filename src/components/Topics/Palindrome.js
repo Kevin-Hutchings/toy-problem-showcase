@@ -16,14 +16,14 @@ class Palindrome extends Component {
   }
 
   checkTacocat(string){
-  let arrayValues = string.split('');
-  let reverseArrayValues = arrayValues.reverse();
-  let reverseString = reverseArrayValues.join('');
+  let array = string.split('');
+  let reverseArray = array.reverse();
+  let reverseString = reverseArray.join('');
 
-  if(string === reverseString) {
+  if(string === reverseString){
     this.setState({palindrome: 'true'})
   } else {
-  this.setState({palindrome: 'false'})
+    this.setState({palindrome: 'false'})
   }
 }
 
