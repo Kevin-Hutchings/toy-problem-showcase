@@ -26,7 +26,7 @@ class FilterObject extends Component {
         {
           name: 'Monica Martin',
           style: 'Indie Pop',
-          instrument: 'Vocal'
+          band: 'PHOX'
         },
         {
           name: 'Benny Goodman',
@@ -37,15 +37,15 @@ class FilterObject extends Component {
 
 
       userInput: '',
-      filteredEmployees: []
+      filteredMusicians: []
     }
   }
 
-  handleChange(val) {
+  handleChange(val){
     this.setState({userInput: val});
   }
 
-  filterMusicians(prop) {
+  filterMusicians(prop){
     let musicians = this.state.musicians;
     let filteredMusicians = [];
 
