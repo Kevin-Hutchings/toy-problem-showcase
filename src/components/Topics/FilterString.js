@@ -8,7 +8,7 @@ class FilterString extends Component{
       names: ['Arthur', 'Ford', 'Slartibartfast', 'Zaphod', 'DeepThought'],
       userInput: '',
       filteredNames: []
-    }
+    };
   }
 
   handleChange(val){
@@ -25,7 +25,7 @@ class FilterString extends Component{
       }
     })
 
-    this.setState({filteredNames: filteredNames})
+    this.setState({filteredNames: filteredNames});
   }
 
   render(){

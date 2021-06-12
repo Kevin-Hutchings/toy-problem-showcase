@@ -9,9 +9,6 @@ class EvenAndOdd extends Component{
       oddArray: [],
       userInput: ''
     }
-
-    // this.handleChange = this.handleChange.bind(this);
-    // this.assignEvenAndOdds = this.assignEvenAndOdds.bind(this);
   }
 
   handleChange(val){

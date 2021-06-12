@@ -13,16 +13,16 @@ class FilterObject extends Component {
           instrument: 'Piano',
           variations: 'Goldberg'
         },
-        {
-          name: 'Valentina Lisitsa',
-          style: 'Romantic',
-          instrument: 'Piano'
-        },
-        {
-          name: 'Cecilia Bartoli',
-          style: 'Classical',
-          instrument: 'Vocal'
-        },
+        // {
+        //   name: 'Valentina Lisitsa',
+        //   style: 'Romantic',
+        //   instrument: 'Piano'
+        // },
+        // {
+        //   name: 'Cecilia Bartoli',
+        //   style: 'Classical',
+        //   instrument: 'Vocal'
+        // },
         {
           name: 'Monica Martin',
           style: 'Indie Pop',
