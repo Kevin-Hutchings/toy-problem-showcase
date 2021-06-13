@@ -4,6 +4,7 @@ import FilterObject from '../Topics/FilterObject';
 import FilterString from '../Topics/FilterString';
 import Palindrome from '../Topics/Palindrome';
 import Sum from '../Topics/Sum';
+import ReverseWords from '../Topics/ReverseWords';
 
 class TopicBrowser extends Component{
   render(){
@@ -13,6 +14,7 @@ class TopicBrowser extends Component{
         <FilterObject />
         <FilterString />
         <Palindrome />
+        <ReverseWords />
         <Sum />
       </div>
     )
